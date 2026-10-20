@@ -47,7 +47,7 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
 }
 
 const stats = [
-  { value: 8, suffix: "+", label: { en: "Production Apps", he: "\u05d0\u05e4\u05dc\u05d9\u05e7\u05e6\u05d9\u05d5\u05ea \u05d1\u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df" } },
+  { value: 8, suffix: "+", label: { en: "Production Systems", he: "\u05de\u05e2\u05e8\u05db\u05d5\u05ea \u05d1\u05e4\u05e8\u05d5\u05d3\u05e7\u05e9\u05df" } },
   { value: 12, suffix: "+", label: { en: "Technologies", he: "\u05d8\u05db\u05e0\u05d5\u05dc\u05d5\u05d2\u05d9\u05d5\u05ea" } },
   { value: 6, suffix: "", label: { en: "Languages", he: "\u05e9\u05e4\u05d5\u05ea \u05ea\u05db\u05e0\u05d5\u05ea" } },
   { value: 50, suffix: "K+", label: { en: "Lines of Code", he: "\u05e9\u05d5\u05e8\u05d5\u05ea \u05e7\u05d5\u05d3" } },

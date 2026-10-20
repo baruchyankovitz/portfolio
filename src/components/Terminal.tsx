@@ -40,27 +40,27 @@ const COMMANDS: Record<string, { en: string; he: string }> = {
   Backend:   Node.js | Express | Next.js | REST | WebSocket
   Frontend:  React | TypeScript | Tailwind | Redux
   Database:  MongoDB | PostgreSQL | Prisma | Redis
-  DevOps:    Docker | Git | Vercel | AWS | CI/CD
+  DevOps:    Docker | Git | Vercel | CI/CD
   AI/ML:     LangChain | Claude API | Gemini | Ollama | RAG
   Languages: JS | TS | Python | Java | C# | SQL`,
     he: `> טכנולוגיות:
   Backend:   Node.js | Express | Next.js | REST | WebSocket
   Frontend:  React | TypeScript | Tailwind | Redux
   Database:  MongoDB | PostgreSQL | Prisma | Redis
-  DevOps:    Docker | Git | Vercel | AWS | CI/CD
+  DevOps:    Docker | Git | Vercel | CI/CD
   AI/ML:     LangChain | Claude API | Gemini | Ollama | RAG
   Languages: JS | TS | Python | Java | C# | SQL`,
   },
   projects: {
     en: `> Featured Projects:
   [1] MailFlow      — Email marketing SaaS (Next.js, Stripe, Prisma)
-  [2] Light         — In-store testing system (React, Docker, Socket.io)
+  [2] Light         — In-store dimmability testing app (Base44)
   [3] Synagogue     — Management platform (React, Express, MongoDB)
   [4] Construction  — Project manager (.NET, C#, TypeScript)
   [5] DailyRecorder — AI audio transcription (Python, WhatsApp)`,
     he: `> פרויקטים נבחרים:
   [1] MailFlow      — פלטפורמת שיווק מיילים (Next.js, Stripe, Prisma)
-  [2] Light         — מערכת בדיקות בחנות (React, Docker, Socket.io)
+  [2] Light         — אפליקציה לבדיקת עמעום בחנויות (Base44)
   [3] Synagogue     — פלטפורמת ניהול (React, Express, MongoDB)
   [4] Construction  — ניהול פרויקטים (.NET, C#, TypeScript)
   [5] DailyRecorder — תמלול AI (Python, WhatsApp)`,
@@ -69,29 +69,29 @@ const COMMANDS: Record<string, { en: string; he: string }> = {
     en: `> Contact Info:
   Email:    baruchyankovitz@gmail.com
   Phone:    055-678-2035
-  GitHub:   github.com/baruchyankovich
-  LinkedIn: linkedin.com/in/baruch-yankuvitz`,
+  GitHub:   github.com/baruchyankovitz
+  LinkedIn: linkedin.com/in/baruch-yankovitz`,
     he: `> פרטי קשר:
   אימייל:   baruchyankovitz@gmail.com
   טלפון:    055-678-2035
-  GitHub:   github.com/baruchyankovich
-  LinkedIn: linkedin.com/in/baruch-yankuvitz`,
+  GitHub:   github.com/baruchyankovitz
+  LinkedIn: linkedin.com/in/baruch-yankovitz`,
   },
   experience: {
     en: `> Experience:
   Full-stack development with focus on backend architecture.
-  Built 8+ production applications across multiple domains:
-  - SaaS platforms with payment integration
+  Built 8+ production systems across multiple domains:
+  - Platforms with payment integration
   - Real-time systems with WebSocket
   - AI-powered automation tools
-  - Containerized microservices with Docker`,
+  - Containerized services with Docker`,
     he: `> ניסיון:
   פיתוח פול-סטאק עם התמקדות בארכיטקטורת בק-אנד.
-  בניתי 8+ אפליקציות פרודקשן במגוון תחומים:
-  - פלטפורמות SaaS עם אינטגרציית תשלומים
+  בניתי 8+ מערכות פרודקשן במגוון תחומים:
+  - פלטפורמות עם אינטגרציית תשלומים
   - מערכות real-time עם WebSocket
   - כלי אוטומציה מבוססי AI
-  - מיקרוסרוויסים עם Docker`,
+  - שירותים בקונטיינרים עם Docker`,
   },
   hire: {
     en: `> Why hire me?

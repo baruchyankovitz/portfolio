@@ -1,35 +1,78 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Noto_Sans_Hebrew, JetBrains_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoHebrew = Noto_Sans_Hebrew({
+  variable: "--font-noto-hebrew",
+  subsets: ["hebrew"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Baruch Yankovitz | Backend Developer & AI Solutions",
+  metadataBase: new URL(SITE_URL),
+  title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
   description:
-    "Backend developer specializing in Node.js, TypeScript, AI solutions, and full-stack product delivery. Building scalable systems and intelligent applications.",
+    "Baruch Yankovitz — Full Stack developer & AI specialist in Tel Aviv. A one-person tech team shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack SaaS, and Shopify automation — production systems built end-to-end.",
   keywords: [
-    "Backend Developer",
+    "Baruch Yankovitz",
+    "Full Stack Developer",
+    "AI Engineer",
+    "AI Builder",
+    "Multi-Agent AI",
+    "Claude API",
+    "Gemini API",
+    "Generative AI",
+    "AI Automation",
     "Node.js",
     "TypeScript",
-    "AI",
-    "Full Stack",
     "React",
     "Next.js",
+    "Python",
+    "Shopify",
+    "Tel Aviv Developer",
   ],
+  authors: [{ name: "Baruch Yankovitz", url: SITE_URL }],
+  creator: "Baruch Yankovitz",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Baruch Yankovitz | Backend Developer & AI Solutions",
+    title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
     description:
-      "Backend developer specializing in Node.js, TypeScript, AI solutions, and full-stack product delivery.",
-    type: "website",
+      "A one-person tech team in Tel Aviv shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack SaaS, and Shopify automation — production systems built end-to-end.",
+    url: SITE_URL,
+    siteName: "Baruch Yankovitz",
+    locale: "en_US",
+    alternateLocale: "he_IL",
+    type: "profile",
+    firstName: "Baruch",
+    lastName: "Yankovitz",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
+    description:
+      "Full Stack developer & AI specialist in Tel Aviv. Multi-agent AI pipelines, AI video systems, full-stack SaaS & Shopify automation — shipped end-to-end.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  verification: {
+    google: "5DeP66xqYse02lnomjzmkUUskxYITV8Ot1IPb1DPnr8",
   },
 };
 
@@ -40,8 +83,88 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-white`}
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "ProfilePage",
+                  "@id": `${SITE_URL}/#profilepage`,
+                  url: SITE_URL,
+                  name: "Baruch Yankovitz — Full Stack Developer & AI Builder",
+                  inLanguage: "en",
+                  isPartOf: { "@id": `${SITE_URL}/#website` },
+                  about: { "@id": `${SITE_URL}/#person` },
+                  mainEntity: { "@id": `${SITE_URL}/#person` },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${SITE_URL}/#website`,
+                  url: SITE_URL,
+                  name: "Baruch Yankovitz",
+                  description:
+                    "Portfolio of Baruch Yankovitz — Full Stack developer and AI specialist in Tel Aviv.",
+                  inLanguage: ["en", "he"],
+                  publisher: { "@id": `${SITE_URL}/#person` },
+                },
+                {
+                  "@type": "Person",
+                  "@id": `${SITE_URL}/#person`,
+                  name: "Baruch Yankovitz",
+                  alternateName: "ברוך ינקוביץ",
+                  jobTitle: "Full Stack Developer & AI Builder",
+                  description:
+                    "Baruch Yankovitz is a Full Stack developer and AI specialist based in Tel Aviv who operates as a one-person tech team. He ships production-grade systems end-to-end — multi-agent AI pipelines with Claude and Gemini, AI video-generation systems, full-stack SaaS platforms, and Shopify e-commerce with custom automation. He currently works as a freelance Full Stack & AI developer; previously (2025–2026) he was the main technology person at MBN Tech (EnoLED & Light Story), independently owning development, e-commerce, automation, and infrastructure.",
+                  url: SITE_URL,
+                  image: `${SITE_URL}/profile.jpg`,
+                  email: "baruchyankovitz@gmail.com",
+                  telephone: "+972556782035",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Tel Aviv",
+                    addressCountry: "IL",
+                  },
+                  homeLocation: { "@type": "Place", name: "Tel Aviv, Israel" },
+                  knowsLanguage: ["Hebrew", "English"],
+                  knowsAbout: [
+                    "Full Stack Development",
+                    "Multi-Agent AI Systems",
+                    "Claude API",
+                    "Gemini API",
+                    "Next.js",
+                    "React",
+                    "TypeScript",
+                    "Node.js",
+                    "Python",
+                    "AI Video Pipelines",
+                    "Shopify & Liquid",
+                    "E-Commerce Automation",
+                    "Marketing Automation",
+                    "SEO",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "Docker",
+                  ],
+                  alumniOf: {
+                    "@type": "EducationalOrganization",
+                    name: "ORT Singalovski",
+                  },
+                  sameAs: [
+                    "https://github.com/baruchyankovitz",
+                    "https://www.linkedin.com/in/baruch-yankovitz/",
+                  ],
+                },
+              ],
+            }),
+          }}
+        />
+      </head>
+      <body
+        suppressHydrationWarning
+        className={`${inter.variable} ${notoHebrew.variable} ${jetbrainsMono.variable} antialiased text-white`}
       >
         {children}
       </body>

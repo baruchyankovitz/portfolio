@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
 
-const navItems = ["about", "skills", "projects", "contact"] as const;
+const navItems = ["about", "experience", "skills", "projects", "contact"] as const;
 
 export default function Navigation() {
   const { lang, setLang, t } = useLanguage();
@@ -15,7 +15,6 @@ export default function Navigation() {
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 50);
 
-    // Active section detection
     const sections = navItems.map((id) => document.getElementById(id));
     let current = "";
     for (const section of sections) {
@@ -36,10 +35,7 @@ export default function Navigation() {
 
   const scrollTo = (id: string) => {
     setMobileOpen(false);
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   const dir = lang === "he" ? "rtl" : "ltr";
@@ -47,9 +43,9 @@ export default function Navigation() {
   return (
     <nav
       dir={dir}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/70 backdrop-blur-xl border-b border-white/10"
+          ? "bg-black/80 backdrop-blur-2xl border-b border-[var(--color-border)]"
           : "bg-transparent"
       }`}
     >
@@ -57,7 +53,11 @@ export default function Navigation() {
         {/* Logo */}
         <a
           href="#"
-          className="text-2xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="text-xl font-bold text-white transition-colors duration-300 hover:text-[var(--color-accent)]"
         >
           B.Y.
         </a>
@@ -68,45 +68,38 @@ export default function Navigation() {
             <button
               key={item}
               onClick={() => scrollTo(item)}
-              className={`text-sm font-medium transition-colors duration-200 ${
+              className={`relative text-sm font-medium transition-colors duration-200 ${
                 activeSection === item
                   ? "text-white"
-                  : "text-gray-300 hover:text-white"
+                  : "text-[var(--color-text-secondary)] hover:text-white"
               }`}
             >
               {t.nav[item]}
               {activeSection === item && (
                 <motion.div
                   layoutId="activeNav"
-                  className="mt-1 h-0.5 rounded-full bg-gradient-to-r from-blue-400 to-purple-400"
+                  className="absolute -bottom-1 left-0 right-0 h-[2px] bg-[var(--color-accent)]"
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
               )}
             </button>
           ))}
 
-          {/* Contact shortcuts */}
-          <div className="flex items-center gap-1 rounded-lg border border-white/15 px-3 py-1.5">
-            <a
-              href="mailto:baruchyankovitz@gmail.com"
-              className="text-xs text-gray-300 hover:text-white transition-colors"
-            >
-              baruchyankovitz@gmail.com
-            </a>
-            <span className="text-gray-600 mx-1">|</span>
-            <a
-              href="tel:+972556782035"
-              className="text-xs text-gray-300 hover:text-white transition-colors"
-            >
-              055-678-2035
-            </a>
-          </div>
+          {/* Download CV */}
+          <a
+            href="/cv/baruch-yankovitz-cv.pdf"
+            download
+            className="rounded-full border border-[var(--color-accent)]/30 bg-[var(--color-accent)]/10 px-4 py-1.5 text-xs font-semibold text-[var(--color-accent)] transition-all duration-300 hover:bg-[var(--color-accent)]/20 hover:border-[var(--color-accent)]/50"
+          >
+            {t.nav.cv}
+          </a>
 
           {/* Language toggle */}
           <button
             onClick={() => setLang(lang === "en" ? "he" : "en")}
-            className="rounded-lg border border-white/20 px-3 py-1.5 text-xs font-bold text-white transition-colors hover:border-white/40 hover:bg-white/10"
+            className="rounded-full border border-[var(--color-border-hover)] px-3 py-1.5 text-xs font-bold text-white transition-all duration-300 hover:border-white/30 hover:bg-white/5"
           >
-            {lang === "en" ? "HE" : "EN"}
+            {lang === "en" ? "\u05e2\u05d1" : "EN"}
           </button>
         </div>
 
@@ -114,9 +107,9 @@ export default function Navigation() {
         <div className="flex items-center gap-3 md:hidden">
           <button
             onClick={() => setLang(lang === "en" ? "he" : "en")}
-            className="rounded-lg border border-white/20 px-3 py-1.5 text-xs font-bold text-white transition-colors hover:border-white/40 hover:bg-white/10"
+            className="rounded-full border border-[var(--color-border-hover)] px-3 py-1.5 text-xs font-bold text-white"
           >
-            {lang === "en" ? "HE" : "EN"}
+            {lang === "en" ? "\u05e2\u05d1" : "EN"}
           </button>
 
           <button
@@ -148,22 +141,31 @@ export default function Navigation() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden border-b border-white/10 bg-black/90 backdrop-blur-xl md:hidden"
+            className="overflow-hidden border-b border-[var(--color-border)] bg-black/95 backdrop-blur-2xl md:hidden"
           >
-            <div className="flex flex-col gap-2 px-6 py-4">
+            <div className="flex flex-col gap-1 px-6 py-4">
               {navItems.map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollTo(item)}
-                  className={`rounded-lg px-4 py-3 text-left text-sm font-medium transition-colors ${
+                  className={`rounded-lg px-4 py-3 text-sm font-medium transition-colors ${
+                    lang === "he" ? "text-right" : "text-left"
+                  } ${
                     activeSection === item
-                      ? "bg-white/10 text-white"
-                      : "text-gray-300 hover:bg-white/5 hover:text-white"
+                      ? "bg-white/5 text-white"
+                      : "text-[var(--color-text-secondary)] hover:bg-white/5 hover:text-white"
                   }`}
                 >
                   {t.nav[item]}
                 </button>
               ))}
+              <a
+                href="/cv/baruch-yankovitz-cv.pdf"
+                download
+                className="mt-2 rounded-lg bg-[var(--color-accent)]/10 px-4 py-3 text-center text-sm font-semibold text-[var(--color-accent)]"
+              >
+                {t.nav.cv}
+              </a>
             </div>
           </motion.div>
         )}

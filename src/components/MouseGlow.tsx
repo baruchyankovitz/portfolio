@@ -17,14 +17,14 @@ export default function MouseGlow() {
     <div
       className="pointer-events-none fixed z-[5] hidden md:block"
       style={{
-        left: pos.x - 200,
-        top: pos.y - 200,
-        width: 400,
-        height: 400,
+        left: pos.x - 250,
+        top: pos.y - 250,
+        width: 500,
+        height: 500,
         background:
-          "radial-gradient(circle, rgba(0,212,255,0.06) 0%, rgba(168,85,247,0.03) 40%, transparent 70%)",
+          "radial-gradient(circle, rgba(0,212,255,0.03) 0%, rgba(0,212,255,0.015) 40%, transparent 70%)",
         borderRadius: "50%",
-        transition: "left 0.1s ease-out, top 0.1s ease-out",
+        transition: "left 0.15s ease-out, top 0.15s ease-out",
       }}
     />
   );

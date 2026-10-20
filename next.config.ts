@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Profile image is now served locally from /public — no remote hosts needed.
 };
 
 export default nextConfig;
