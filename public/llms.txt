@@ -1,6 +1,6 @@
 # Baruch Yankovitz — Full Stack Developer & AI Builder
 
-> Baruch Yankovitz is a Tel Aviv–based Full Stack developer and AI specialist who operates as a one-person tech team. He ships production-grade systems end-to-end — from multi-agent AI pipelines and AI video generation to full-stack SaaS platforms and Shopify e-commerce automation. He currently works as a freelance Full Stack & AI developer; previously (2025–2026) he was the main technology person at MBN Tech (EnoLED & Light Story), independently owning development, e-commerce, automation, and infrastructure.
+> Baruch Yankovitz is a Tel Aviv–based Full Stack developer and AI specialist. He ships production-grade systems end-to-end — from multi-agent AI pipelines and AI video generation to full-stack platforms and Shopify e-commerce automation. He currently works as a freelance Full Stack & AI developer; previously (2025–2026) he was the main technology person at MBN Tech (EnoLED & Light Story), independently owning development, e-commerce, automation, and infrastructure.
 
 This file summarizes Baruch Yankovitz's professional profile for AI assistants and search engines. All facts below are accurate and verifiable via the linked sources.
 
@@ -26,7 +26,7 @@ This file summarizes Baruch Yankovitz's professional profile for AI assistants a
 
 - **Light Story — AI Video Pipeline:** End-to-end automated AI video generation for a Shopify store (Kling AI + Flask review UI + Shopify GraphQL upload). Cut video production from hours to minutes.
 - **Multi-Agent Ad Campaign Generator:** A 7-agent AI pipeline (TypeScript/Node.js, Claude + Gemini) that auto-generates complete Facebook ad campaigns with a real-time dashboard at ~$0.10 per campaign — reducing creation time by ~90%.
-- **MailFlow — Email Marketing SaaS (not launched):** Full-stack platform (Next.js, Prisma, PostgreSQL, Stripe) with campaigns, CSV import, analytics, HMAC-signed unsubscribe tokens, and billing.
+- **MailFlow — Email Marketing Platform (learning project, not launched):** Full-stack platform (Next.js, Prisma, PostgreSQL, Stripe) with campaigns, CSV import, analytics, HMAC-signed unsubscribe tokens, and billing.
 - **EveryoneDJ — YouTube Audio Mixer:** Full-stack app (TypeScript, Node.js, ffmpeg) to cut, reorder, crossfade, and merge YouTube audio into a single MP3 megamix with real-time progress.
 - **Daily Recorder — AI Transcription:** macOS daemon that records workday audio, transcribes with Whisper, summarizes with Claude, and delivers summaries via WhatsApp.
 - **Radio Speed — Chrome Extension:** Unofficial Manifest V3 extension adding speed control (0.5x–3x) and a modern player to recorded shows on Israeli radio sites (103FM on the Chrome Web Store; Galei Tzahal and Kan in the latest GitHub version). No data leaves the browser.

@@ -9,7 +9,6 @@ import {
   type KeyboardEvent,
   type ReactNode,
 } from "react";
-import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLanguage } from "@/hooks/useLanguage";
 import {
@@ -309,13 +308,12 @@ export default function ChatWidget() {
             {/* Header */}
             <div className="flex items-center gap-3 border-b border-[var(--color-border)] px-4 py-3">
               <div className="relative flex-shrink-0">
-                <Image
-                  src="/profile.jpg"
-                  alt=""
-                  width={36}
-                  height={36}
-                  className="h-9 w-9 rounded-full object-cover"
-                />
+                <div
+                  aria-hidden="true"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[var(--color-accent)]/30 to-[var(--color-accent-2)]/30 text-xs font-bold text-white"
+                >
+                  BY
+                </div>
                 <span className="absolute -bottom-0.5 -end-0.5 h-2.5 w-2.5 rounded-full border-2 border-[var(--color-card)] bg-emerald-400" />
               </div>
               <div className="min-w-0 flex-1">

@@ -25,7 +25,7 @@ const baruch = {
 };
 ```
 
-I'm a backend-leaning full-stack developer and AI builder who operates as a **one-person tech team** — now freelancing, after serving as the main technology person at MBN Tech (EnoLED & Light Story). I take products from idea to production: architecture, code, infrastructure, and growth. I don't just write code — I engineer systems that solve real business problems.
+I'm a backend-leaning full-stack developer and AI builder — now freelancing, after serving as the main technology person at MBN Tech (EnoLED & Light Story). I take products from idea to production: architecture, code, infrastructure, and growth. I don't just write code — I engineer systems that solve real business problems.
 
 ---
 
@@ -54,7 +54,7 @@ I'm a backend-leaning full-stack developer and AI builder who operates as a **on
 >
 > `Python` `Flask` `Kling AI` `Shopify GraphQL` `Liquid`
 
-### MailFlow — Email Marketing SaaS
+### MailFlow — Email Marketing Platform *(learning project, not launched)*
 > Full-stack email marketing platform with campaign management, CSV import, analytics, HMAC-signed unsubscribe tokens, and Stripe billing.
 >
 > `Next.js` `Prisma` `PostgreSQL` `Stripe` `Resend` `TypeScript`
@@ -69,18 +69,10 @@ I'm a backend-leaning full-stack developer and AI builder who operates as a **on
 >
 > `Python` `Whisper` `Claude API` `Playwright`
 
-<details>
-<summary><b>More projects</b></summary>
-
-### [Construction System](https://github.com/baruchyankovitz/ConstructionSystem) — Project Management
-> Enterprise construction project manager with task tracking, role-based access, and REST API.
-> `Angular` `C#` `.NET` `TypeScript`
-
-### [Synagogue Platform](https://github.com/baruchyankovitz/synagogue-backend) — Management System
-> Community management backend with JWT auth, event booking, member management, and email notifications.
-> `Node.js` `Express` `MongoDB` `JWT`
-
-</details>
+### [Synagogue Management Platform](https://github.com/baruchyankovitz/synagogue-backend) — Full Stack, sold to a client
+> Synagogue management system sold to a client in 2025: events, members, Stripe and PayPal payments, JWT login, and automatic emails, in Hebrew and English. A joint project; built most of the components on both the frontend and the backend.
+>
+> `React` `Node.js` `Express` `MongoDB` `Docker` `Stripe` `PayPal`
 
 ---
 

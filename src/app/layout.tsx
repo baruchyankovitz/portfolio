@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
   description:
-    "Baruch Yankovitz — Full Stack developer & AI specialist in Tel Aviv. A one-person tech team shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack SaaS, and Shopify automation — production systems built end-to-end.",
+    "Baruch Yankovitz — Full Stack developer & AI specialist in Tel Aviv, shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack platforms, and Shopify automation — production systems built end-to-end.",
   keywords: [
     "Baruch Yankovitz",
     "Full Stack Developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
     description:
-      "A one-person tech team in Tel Aviv shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack SaaS, and Shopify automation — production systems built end-to-end.",
+      "Full Stack & AI developer in Tel Aviv shipping multi-agent AI pipelines (Claude, Gemini), AI video systems, full-stack platforms, and Shopify automation — production systems built end-to-end.",
     url: SITE_URL,
     siteName: "Baruch Yankovitz",
     locale: "en_US",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Baruch Yankovitz | Full Stack Developer & AI Builder",
     description:
-      "Full Stack developer & AI specialist in Tel Aviv. Multi-agent AI pipelines, AI video systems, full-stack SaaS & Shopify automation — shipped end-to-end.",
+      "Full Stack developer & AI specialist in Tel Aviv. Multi-agent AI pipelines, AI video systems, full-stack platforms & Shopify automation — shipped end-to-end.",
   },
   robots: {
     index: true,
@@ -117,9 +117,8 @@ export default function RootLayout({
                   alternateName: "ברוך ינקוביץ",
                   jobTitle: "Full Stack Developer & AI Builder",
                   description:
-                    "Baruch Yankovitz is a Full Stack developer and AI specialist based in Tel Aviv who operates as a one-person tech team. He ships production-grade systems end-to-end — multi-agent AI pipelines with Claude and Gemini, AI video-generation systems, full-stack SaaS platforms, and Shopify e-commerce with custom automation. He currently works as a freelance Full Stack & AI developer; previously (2025–2026) he was the main technology person at MBN Tech (EnoLED & Light Story), independently owning development, e-commerce, automation, and infrastructure.",
+                    "Baruch Yankovitz is a Full Stack developer and AI specialist based in Tel Aviv. He ships production-grade systems end-to-end — multi-agent AI pipelines with Claude and Gemini, AI video-generation systems, full-stack platforms, and Shopify e-commerce with custom automation. He currently works as a freelance Full Stack & AI developer; previously (2025–2026) he was the main technology person at MBN Tech (EnoLED & Light Story), independently owning development, e-commerce, automation, and infrastructure.",
                   url: SITE_URL,
-                  image: `${SITE_URL}/profile.jpg`,
                   email: "baruchyankovitz@gmail.com",
                   telephone: "+972556782035",
                   address: {

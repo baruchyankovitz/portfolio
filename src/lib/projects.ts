@@ -64,12 +64,12 @@ export const projects: Project[] = [
   {
     id: "mailflow",
     title: {
-      en: "MailFlow \u2014 Email Marketing SaaS",
+      en: "MailFlow \u2014 Email Marketing Platform",
       he: "MailFlow \u2014 \u05e4\u05dc\u05d8\u05e4\u05d5\u05e8\u05de\u05ea \u05e9\u05d9\u05d5\u05d5\u05e7 \u05de\u05d9\u05d9\u05dc\u05d9\u05dd",
     },
     description: {
-      en: "Full-stack email marketing platform with campaign management, CSV import, analytics dashboard, HMAC-signed unsubscribe tokens, and Stripe billing integration.",
-      he: "\u05e4\u05dc\u05d8\u05e4\u05d5\u05e8\u05de\u05ea \u05e9\u05d9\u05d5\u05d5\u05e7 \u05de\u05d9\u05d9\u05dc\u05d9\u05dd \u05de\u05dc\u05d0\u05d4 \u05e2\u05dd \u05e0\u05d9\u05d4\u05d5\u05dc \u05e7\u05de\u05e4\u05d9\u05d9\u05e0\u05d9\u05dd, \u05d9\u05d9\u05d1\u05d5\u05d0 CSV, \u05d3\u05e9\u05d1\u05d5\u05e8\u05d3 \u05d0\u05e0\u05dc\u05d9\u05d8\u05d9\u05e7\u05e1, \u05d8\u05d5\u05e7\u05e0\u05d9 \u05d4\u05e1\u05e8\u05d4 \u05de\u05d0\u05d5\u05d1\u05d8\u05d7\u05d9\u05dd \u05d5\u05d0\u05d9\u05e0\u05d8\u05d2\u05e8\u05e6\u05d9\u05d9\u05ea \u05ea\u05e9\u05dc\u05d5\u05de\u05d9\u05dd \u05e2\u05dd Stripe.",
+      en: "Learning project, not launched. Full-stack email marketing platform with campaign management, CSV import, analytics dashboard, HMAC-signed unsubscribe tokens, and Stripe billing integration.",
+      he: "\u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05dc\u05d9\u05de\u05d5\u05d3, \u05dc\u05d0 \u05d4\u05d5\u05e9\u05e7. \u05e4\u05dc\u05d8\u05e4\u05d5\u05e8\u05de\u05ea \u05e9\u05d9\u05d5\u05d5\u05e7 \u05de\u05d9\u05d9\u05dc\u05d9\u05dd \u05de\u05dc\u05d0\u05d4 \u05e2\u05dd \u05e0\u05d9\u05d4\u05d5\u05dc \u05e7\u05de\u05e4\u05d9\u05d9\u05e0\u05d9\u05dd, \u05d9\u05d9\u05d1\u05d5\u05d0 CSV, \u05d3\u05e9\u05d1\u05d5\u05e8\u05d3 \u05d0\u05e0\u05dc\u05d9\u05d8\u05d9\u05e7\u05e1, \u05d8\u05d5\u05e7\u05e0\u05d9 \u05d4\u05e1\u05e8\u05d4 \u05de\u05d0\u05d5\u05d1\u05d8\u05d7\u05d9\u05dd \u05d5\u05d0\u05d9\u05e0\u05d8\u05d2\u05e8\u05e6\u05d9\u05d9\u05ea \u05ea\u05e9\u05dc\u05d5\u05de\u05d9\u05dd \u05e2\u05dd Stripe.",
     },
     tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Resend"],
     gradient: "from-blue-500 to-cyan-400",
@@ -108,36 +108,20 @@ export const projects: Project[] = [
     category: "backend",
   },
   {
-    id: "construction",
-    title: {
-      en: "Construction Project Manager",
-      he: "\u05de\u05e2\u05e8\u05db\u05ea \u05e0\u05d9\u05d4\u05d5\u05dc \u05e4\u05e8\u05d5\u05d9\u05e7\u05d8\u05d9 \u05d1\u05e0\u05d9\u05d9\u05d4",
-    },
-    description: {
-      en: "Enterprise project management system for construction companies with Angular 19 frontend and ASP.NET Core backend. Role-based access control and REST API.",
-      he: "\u05de\u05e2\u05e8\u05db\u05ea \u05e0\u05d9\u05d4\u05d5\u05dc \u05e4\u05e8\u05d5\u05d9\u05e7\u05d8\u05d9\u05dd \u05dc\u05d7\u05d1\u05e8\u05d5\u05ea \u05d1\u05e0\u05d9\u05d9\u05d4, \u05e2\u05dd \u05e4\u05e8\u05d5\u05e0\u05d8 Angular 19 \u05d5\u05d1\u05e7-\u05d0\u05e0\u05d3 ASP.NET Core. \u05d1\u05e7\u05e8\u05ea \u05d4\u05e8\u05e9\u05d0\u05d5\u05ea \u05dc\u05e4\u05d9 \u05ea\u05e4\u05e7\u05d9\u05d3.",
-    },
-    tech: ["Angular", "C#", ".NET", "TypeScript", "REST API"],
-    github: "https://github.com/baruchyankovitz/ConstructionSystem",
-    gradient: "from-sky-500 to-blue-400",
-    icon: "\u{1f3d7}\ufe0f",
-    category: "fullstack",
-  },
-  {
     id: "synagogue",
     title: {
       en: "Synagogue Management Platform",
       he: "\u05de\u05e2\u05e8\u05db\u05ea \u05e0\u05d9\u05d4\u05d5\u05dc \u05d1\u05ea\u05d9 \u05db\u05e0\u05e1\u05ea",
     },
     description: {
-      en: "Backend API for synagogue management with JWT authentication, MongoDB, event booking, member management, and automated email notifications via Mailtrap.",
-      he: "\u05de\u05e2\u05e8\u05db\u05ea \u05d1\u05e7-\u05d0\u05e0\u05d3 \u05dc\u05e0\u05d9\u05d4\u05d5\u05dc \u05d1\u05ea\u05d9 \u05db\u05e0\u05e1\u05ea \u05e2\u05dd \u05d0\u05d9\u05de\u05d5\u05ea JWT, MongoDB, \u05d4\u05d6\u05de\u05e0\u05ea \u05d0\u05d9\u05e8\u05d5\u05e2\u05d9\u05dd \u05d5\u05d4\u05ea\u05e8\u05d0\u05d5\u05ea \u05d0\u05d5\u05d8\u05d5\u05de\u05d8\u05d9\u05d5\u05ea.",
+      en: "Full-stack synagogue management system sold to a client in 2025: events, members, Stripe and PayPal payments, JWT login, Torah-reading management, and automatic emails, in Hebrew and English. A joint project with another developer: built most of the components, on both the frontend and the backend. The linked repository is the backend.",
+      he: "\u05de\u05e2\u05e8\u05db\u05ea Full Stack \u05dc\u05e0\u05d9\u05d4\u05d5\u05dc \u05d1\u05d9\u05ea \u05db\u05e0\u05e1\u05ea \u05e9\u05e0\u05de\u05db\u05e8\u05d4 \u05dc\u05dc\u05e7\u05d5\u05d7 \u05d1-2025: \u05d0\u05d9\u05e8\u05d5\u05e2\u05d9\u05dd, \u05d7\u05d1\u05e8\u05d9\u05dd, \u05ea\u05e9\u05dc\u05d5\u05de\u05d9\u05dd \u05d1-Stripe \u05d5\u05d1-PayPal, \u05d4\u05ea\u05d7\u05d1\u05e8\u05d5\u05ea \u05e2\u05dd JWT, \u05e0\u05d9\u05d4\u05d5\u05dc \u05e7\u05e8\u05d9\u05d0\u05d4 \u05d1\u05ea\u05d5\u05e8\u05d4 \u05d5\u05de\u05d9\u05d9\u05dc\u05d9\u05dd \u05d0\u05d5\u05d8\u05d5\u05de\u05d8\u05d9\u05d9\u05dd, \u05d1\u05e2\u05d1\u05e8\u05d9\u05ea \u05d5\u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05ea. \u05e4\u05e8\u05d5\u05d9\u05e7\u05d8 \u05de\u05e9\u05d5\u05ea\u05e3 \u05e2\u05dd \u05de\u05e4\u05ea\u05d7 \u05e0\u05d5\u05e1\u05e3: \u05d1\u05e0\u05d9\u05d9\u05ea \u05e8\u05d5\u05d1 \u05d4\u05e8\u05db\u05d9\u05d1\u05d9\u05dd, \u05d1\u05e6\u05d3 \u05d4\u05dc\u05e7\u05d5\u05d7 \u05d5\u05d1\u05e6\u05d3 \u05d4\u05e9\u05e8\u05ea. \u05d4\u05e8\u05d9\u05e4\u05d5 \u05d4\u05de\u05e7\u05d5\u05e9\u05e8 \u05d4\u05d5\u05d0 \u05e6\u05d3 \u05d4\u05e9\u05e8\u05ea.",
     },
-    tech: ["Node.js", "Express", "MongoDB", "JWT", "Mailtrap"],
+    tech: ["React", "Node.js", "Express", "MongoDB", "Docker", "Stripe", "PayPal", "JWT"],
     github: "https://github.com/baruchyankovitz/synagogue-backend",
     gradient: "from-amber-500 to-yellow-400",
     icon: "\u{1f3db}\ufe0f",
-    category: "backend",
+    category: "fullstack",
   },
   {
     id: "radio-speed",

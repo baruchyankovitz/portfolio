@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/hooks/useLanguage";
 import SectionHeading from "./SectionHeading";
 
@@ -24,7 +22,6 @@ const cardVariants = {
 
 export default function About() {
   const { t } = useLanguage();
-  const [photoFailed, setPhotoFailed] = useState(false);
 
   return (
     <section id="about" className="relative px-6 py-24 sm:px-8 lg:px-12">
@@ -39,23 +36,10 @@ export default function About() {
           transition={{ duration: 0.5, ease: "easeOut" as const }}
           className="mb-16 flex flex-col items-center gap-8 md:flex-row"
         >
-          {/* Profile photo — served locally; falls back to a monogram if missing */}
+          {/* Monogram */}
           <div className="flex-shrink-0">
-            <div className="relative h-36 w-36 overflow-hidden rounded-full border border-[var(--color-border)] md:h-44 md:w-44">
-              {photoFailed ? (
-                <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[var(--color-accent)]/25 to-[var(--color-accent-2)]/25 text-5xl font-bold tracking-tight text-white">
-                  BY
-                </div>
-              ) : (
-                <Image
-                  src="/profile.jpg"
-                  alt="Baruch Yankovitz"
-                  fill
-                  sizes="176px"
-                  className="object-cover"
-                  onError={() => setPhotoFailed(true)}
-                />
-              )}
+            <div className="flex h-36 w-36 items-center justify-center rounded-full border border-[var(--color-border)] bg-gradient-to-br from-[var(--color-accent)]/25 to-[var(--color-accent-2)]/25 text-5xl font-bold tracking-tight text-white md:h-44 md:w-44">
+              BY
             </div>
           </div>
 

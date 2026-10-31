@@ -53,17 +53,15 @@ const COMMANDS: Record<string, { en: string; he: string }> = {
   },
   projects: {
     en: `> Featured Projects:
-  [1] MailFlow      — Email marketing SaaS (Next.js, Stripe, Prisma)
+  [1] MailFlow      — Email marketing, learning project, not launched (Next.js, Stripe)
   [2] Light         — In-store dimmability testing app (Base44)
-  [3] Synagogue     — Management platform (React, Express, MongoDB)
-  [4] Construction  — Project manager (.NET, C#, TypeScript)
-  [5] DailyRecorder — AI audio transcription (Python, WhatsApp)`,
+  [3] Synagogue     — Full-stack platform, sold to a client (React, Node.js, MongoDB)
+  [4] DailyRecorder — AI audio transcription (Python, WhatsApp)`,
     he: `> פרויקטים נבחרים:
-  [1] MailFlow      — פלטפורמת שיווק מיילים (Next.js, Stripe, Prisma)
+  [1] MailFlow      — שיווק במייל, פרויקט לימוד, לא הושק (Next.js, Stripe)
   [2] Light         — אפליקציה לבדיקת עמעום בחנויות (Base44)
-  [3] Synagogue     — פלטפורמת ניהול (React, Express, MongoDB)
-  [4] Construction  — ניהול פרויקטים (.NET, C#, TypeScript)
-  [5] DailyRecorder — תמלול AI (Python, WhatsApp)`,
+  [3] Synagogue     — מערכת Full Stack שנמכרה ללקוח (React, Node.js, MongoDB)
+  [4] DailyRecorder — תמלול AI (Python, WhatsApp)`,
   },
   contact: {
     en: `> Contact Info:
