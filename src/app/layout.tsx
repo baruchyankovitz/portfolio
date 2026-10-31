@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "Node.js",
     "TypeScript",
     "React",
-    "Next.js",
     "Python",
     "Shopify",
     "Tel Aviv Developer",
