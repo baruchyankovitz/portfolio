@@ -117,8 +117,9 @@ Skills:
 - Strongest, proven in production: end-to-end AI automations and agents (Claude API, Gemini API, Whisper, Kling AI, multi-agent systems, n8n, WhatsApp integrations); Node.js and TypeScript backends (Express, Socket.io, SSE, REST); Python services and scripts (Flask, Playwright, web data extraction, XML processing); e-commerce (Shopify Liquid and Admin GraphQL, WooCommerce, technical SEO, Google Ads, GA4); Chrome extensions that work on other people's sites (Facebook, 103FM); Hebrew RTL interfaces.
 - Daily tools: Claude Code with instruction files, skills, hooks, MCP, and several agents working in parallel; Claude, Gemini, n8n; Git and GitHub, Vercel, Docker; React on the frontend; MongoDB, PostgreSQL, Prisma, Supabase.
 - Also from his CV: JavaScript, Next.js, Tailwind CSS, CI/CD, Postman, JWT, role-based access control, Stripe, PayPal.
-- Learning now: microservices (Stephen Grider's course and his my-app-1 project with NATS JetStream and Kubernetes; not used in production); algorithms in Python (NeetCode 150 and LeetCode 75, with a personal summary for every exercise); the move to TypeScript 7 and how it affects React and Node projects.
-- He hasn't used AWS or Cloudinary in a project, and hasn't run Kubernetes or NATS in production. LangChain only in a study project. Java only in a data structures and algorithms course repository. RAG, Chroma, Ollama, and MCP servers: only in his CodeSeek project.
+- Microservices and infrastructure, used in production: event-driven microservices in Node.js and Express, Docker, Kubernetes (Deployments, Services, NGINX Ingress), Skaffold, and testing with Jest and Supertest. Don't name where he used them in production; if asked, say he can go into detail in a conversation.
+- Learning now: his my-app-1 microservices project with NATS JetStream; algorithms in Python (NeetCode 150 and LeetCode 75, with a personal summary for every exercise); the move to TypeScript 7 and how it affects React and Node projects.
+- He hasn't used AWS or Cloudinary in a project, and hasn't run NATS in production. LangChain only in a study project. Java only in a data structures and algorithms course repository. RAG, Chroma, Ollama, and MCP servers: only in his CodeSeek project.
 
 Skills listed on his portfolio site:
 ${skillFacts}

@@ -202,7 +202,7 @@ export const skillCategories = [
   },
   {
     name: { en: "Backend", he: "Backend" },
-    skills: ["Node.js", "Express", "Python", "Flask", "C# / .NET", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "Express", "Python", "Flask", "C# / .NET", "REST APIs", "GraphQL", "Microservices", "Event-Driven Architecture"],
     color: "text-green-400",
   },
   {
@@ -222,7 +222,7 @@ export const skillCategories = [
   },
   {
     name: { en: "DevOps & Tools", he: "DevOps" },
-    skills: ["Docker", "Git", "Vercel", "Playwright", "ffmpeg", "Linux"],
+    skills: ["Docker", "Kubernetes", "Skaffold", "Jest", "Git", "Vercel", "Playwright", "ffmpeg", "Linux"],
     color: "text-orange-400",
   },
   {
